@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: var(--very-light-gray);
+}
+h1 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  min-height: 97vh;
+  width: 800px;
+}
+
+.card {
+  padding: 30px;
+}
+
+.container img {
+  padding-bottom: 30px;
+}
+.container h1 {
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.container p {
+  line-height: 1.6;
+  padding-bottom: 80px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  border: 2px solid var(--very-light-gray);
+  transition: all 0.4s ease-in-out;
+  text-transform: capitalize;
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.sedans .btn {
+  color: var(--bright-orange);
+}
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.suvs .btn {
+  color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+.luxury .btn {
+  color: var(--very-dark-cyan);
+}
+.btn:hover {
+  background-color: transparent;
+  color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .card {
+    height: 55vh;
+    padding: 60px;
+  }
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+  .card p {
+    padding-bottom: 20px;
+  }
+}
